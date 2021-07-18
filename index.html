@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Desafio 01</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="css/estiloLP.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<section class="section-container background-section">
+			<img src="imgBooks/BlackFridayFull.jpg" >
+		</section>
+		<section class="section-container background-section">
+			<h1>Adquira a Coleção de livros da O'REILLY e <br/>Seja Um Desenvolvedor TypeScript</h1>
+		</section>
+		<section class="section-container background-section">
+			<div class="responsive">
+				<div class="gallery">
+					<img src="imgBooks/typeScript.jpg" alt="typeScript">
+					<h3>Programming Typescript: Making Your JavaScript Applications Scale<br/>Boris Cherny</h3>
+					<p>Páginas: 324, Idioma: Inglês,<br/>Editora: O'Reilly Media</p>
+					<h3 style="text-decoration: line-through">R$:216,46</h3>
+					<h3>Por R$:194,81</h3>
+					<button class="button buttonDesconto">Desconto de<br/>10%</button><br/>
+				</div>
+			</div>
+			<div class="responsive">
+				<div class="gallery">
+					<img src="imgBooks/typeScriptEffective.jpg" alt="typeScript">
+					<h3>Effective Typescript: 62 Specific Ways to Improve Your Typescript<br/>Dan VanderKam</h3>
+					<p>Páginas: 266, Idioma: Inglês,<br/>Editora: O'Reilly Media</p>
+					<h3 style="text-decoration: line-through">R$:210,98</h3>
+					<h3>Por R$:179,35</h3>
+					<button class="button buttonDesconto">Desconto de<br/>15%</button><br/>
+				</div>
+			</div>
+			<!--div class="responsive">
+				<div ="gallery">
+					<h1>Comprando o Combo<br/>de livros você<br/>economiza R$:53,30</h1><br/>
+				</div>
+			</div-->
+			<div class="clearfix"></div>
+		</section>
+		<section class="section-container background-section">
+			<h1>Invista na Sua Carreira de Dev Com a Coleção<br/>de livros JavaScript da O'REILLY</h1>
+		</section>
+		<section class="section-container background-section">
+			<div class="responsive">
+				<div class="gallery">
+					<img src="imgBooks/javaScript.jpg" alt="JavaScript">
+					<h3>Javascript: The Definitive Guide: Master the World's Most-Used Programming Language<br/> David Flanagan</h3>
+					<p>Páginas: 706, Idioma: Inglês,<br/>Editora: O'Reilly Media</p>
+					<h3 style="text-decoration: line-through">R$:342,34</h3>
+					<h3>Por R$:273,89</h3>
+					<button class="button buttonDesconto">Desconto de<br/>20%</button>
+				</div>
+			</div>
+			<div class="responsive">
+				<div class="gallery">
+					<img src="imgBooks/javaScriptModern.jpg" alt="javaScript">
+					<h3>Modern JavaScript for the Impatient<br/>Cay Horstmann</h3><br/>
+					<p>Páginas: 352, Idioma: Inglês,<br/>Editora: Addison-Wesley Professional</p>
+					<h3 style="text-decoration: line-through">R$:323,05</h3>
+					<h3>Por R$:242,29</h3>
+					<button class="button buttonDesconto">Desconto de<br/>25%</button><br/>
+				</div>
+			</div>
+		</section>
+		<section class="section-container background-section">
+			<div class="textoCompra">
+				<p>Preencha o formulário e enviaremos o boleto por e-mail. A entrega ocorre em no máximo 15 dias após a confirmaçõ do pagamento.<br/>Receba nossas newslatters e fique por dentro dos lançamentos e promoções</p>
+			</div>
+		</section>
+		<section  class="section-container background-section">
+			<div class="responsive">
+			  <table>
+			     <tr>
+						<div class="formulario" id="dados">
+							<form id="form" action="/action_page.php">
+								<label for="fname">Nome</label>
+								<input type="text" id="nome" name="name" placeholder="Seu nome..">
+								<label for="fname">Email</label>
+								<input type="text" id="email" name="lastname" placeholder="...@..com">
+								<label for="fname">CPF</label>
+								<input type="text" id="cpf" name="lastcpf" placeholder="xxx.xxx.xxx-xx">
+								<label for="fname">Data Nascimento</label>
+								<input type="date" id="dataNasc" name="dataNasc" placeholder="00/00/0000">
+								<label for="endereco">Endereço</label>
+								<input type="text" id="endereco" name="endereco" placeholder="Endereço...">
+								<label for="numero">Número</label>
+								<input type="text" id="numero" name="numero" placeholder="Número...">
+								<label for="complemento">Complemento</label>
+								<input type="text" id="complemento" name="complemento" placeholder="Complemento...">
+								<label for="bairro">Bairro</label>
+								<input type="text" id="bairro" name="bairro" placeholder="Bairro...">
+								<label for="cidade">Cidade</label>
+								<input type="text" id="cidade" name="cidade" placeholder="Cidade...">
+								<label for="livros">Selecione o Livro</label>
+								<select id="livros" name="livros">
+									<option value="selecione">Selecione</option>
+									<option value="typeScript">Programming Typescript: Making Your JavaScript Applications Scale</option>
+									<option value="typeScriptEffective">Effective Typescript: 62 Specific Ways to Improve Your Typescript</option>
+									<option value="javaScriptDefinitive">Javascript: The Definitive Guide: Master the World's Most-Used Programming Language</option>
+									<option value="javaScriptModern">Modern JavaScript for the Impatient</option>
+								</select>
+								<label for="quantidade">Quantidade</label>
+								<input type="number" id="quantidade" name="qtd">
+								<p>Receber Newslleter</p>
+								<input type="checkbox" id="sim" name="sim" checked>
+								<label for="sim">Sim</label>
+								<input type="checkbox" id="nao" name="nao">
+								<label for="nao">Não</label>
+								<input type="submit" value="Enviar">
+							</form>
+						</div>
+					</tr>
+				</table>
+			</div>
+			<div class="clearfix"></div>
+		</section>
+		<footer>
+			<section class="section-container background-section">
+				<div class="fim">
+					<p>Siga-nos nas nossas redes sociais</p>
+					<table>
+						<tr>
+							<th><i> <a href ="https://pt-br.facebook.com" class="fa fa-facebook-official" style="font-size:48px;color:white"></a></i></th>
+							<th><i> <a href="https://twitter.com" class="fa fa-twitter" style="font-size:48px;color:white"></a></i></th>
+							<th><i> <a href="https://br.pinterest.com" class="fa fa-pinterest" style="font-size:48px;color:white"></a></i></th>
+						</tr>
+					
+					</table><br/><br/>
+				</div>
+			</section>
+		</footer>
+	</body>
+	<script src="js/script.js"></script>
+</html>
